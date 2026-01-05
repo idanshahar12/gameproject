@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(43, 43, 43);
+    color: white;
+    font-family: sans-serif;
+}
+header{
+    background-color:rgb(151, 78, 51);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+header h1{
+    font-family: cursive;
+    text-shadow: 0 0 20px white;   
+    cursor: pointer;
+}
+header h1:hover {
+    color:gold;
+}
+
+.titleH1{
+    color: rgb(151, 78, 51);
+    text-shadow: 0 0 20px rgb(151, 78, 51);  
+    font-family: cursive;
+    text-align: center;
+    margin: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.carousel{
+    /* background-color:rgb(65, 65, 65) ; */
+    height: 200px;
+    margin: 40px auto;
+    display: flex;
+    overflow-x: hidden;
+    gap: 20px;
+    width: 90%;
+}
+
+.group{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    animation: spin 25s infinite linear;
+
+}
+.genre-item{
+    background-color:lightslategray ;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+@keyframes spin{
+    from{
+        translate: 0;
+    }
+    to{
+        translate: -100%;
+    }
+}
+.genre-item:hover {
+    filter: drop-shadow(0 0 10px white);
+}
+
+.game-list{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+}
+.figure{
+    text-align: center;
+    width: 22%;
+    border: solid rgb(151, 78, 51);
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+figure img{
+    width: 100%;
+    margin: 10px 0px;
+}
+
+figure p:nth-of-type(1){
+    font-size: 20px;
+    font-weight: bold;
+}
+.figure:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px 5px hotpink ;
+}
+
+.about-page{
+    display: flex;
+    height: 90vh;
+
+}
+
+.about-page section{
+    flex: 1;
+
+}
+.about-left >*{
+    padding: 20px;
+}
+.about-right img{
+
+    /* border: solid white; */
+    width: 80%;
+    aspect-ratio: 1;
+    border-radius: 50% 50% 50% 50% / 20% 20% 80% 80%;
+    filter: drop-shadow(0 0 50px rgb(151, 78, 51));
+
+
+}
+.about-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.social >*{
+    font-size: 40px;
+    color: rgb(151, 78, 51);
+}
+.social>*:hover {
+    filter: drop-shadow(0 0 5px white);
+}
+.whats-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+button{
+    background-color: hotpink;
+    font-size: 24px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    box-shadow: 0 0 10px 10px rgb(114, 47, 81);;
+}
+
+.game-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.game-content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+}
+
+.game-imgs{
+    height: 500px;
+    flex: 1;
+}
+.game-info {
+
+    flex: 2;
+}
+
+.game-info h3{
+
+    margin-bottom: 40px;
+}
+
+.screenshots{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+}
+.screenshots img {
+    width: 47%;
+
+}
+
+.thumbnail{
+    width: 100%;
+}
+
+.minimum{
+    margin-top: 40px;
+}
+
+
+.pointer{
+    cursor: pointer;
+}
+/* .pointer:hover{
+    box-shadow: 0 0 10px 10px rgb(114, 47, 81);
+    
+} */
